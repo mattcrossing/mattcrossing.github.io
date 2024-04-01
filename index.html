@@ -118,6 +118,18 @@
         function showPopup() {
             alert("Text for when button clicked");
         }
+
+        function showModal(title, message) {
+            var modalTitle = document.getElementById("modal-title");
+            var modalMessage = document.getElementById("modal-message");
+            modalTitle.textContent = title;
+            modalMessage.textContent = message;
+            document.getElementById("custom-modal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("custom-modal").style.display = "none";
+        }
     </script>
 </body>
 </html>
