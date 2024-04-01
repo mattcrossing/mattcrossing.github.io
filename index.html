@@ -24,12 +24,33 @@
             font-size: 32px;
             color: black;
         }
+
+        .about-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .about-button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
     <div class="center">
         <p class="coming-soon">Coming soon!</p>
-         <button>About this website</button>
+         <button class="about-button" onclick="showPopup()">About this website</button>
     </div>
+
+    <script>
+        function showPopup() {
+            alert("Text for when button clicked");
+        }
+    </script>
 </body>
 </html>
