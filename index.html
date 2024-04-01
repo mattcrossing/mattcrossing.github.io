@@ -13,50 +13,59 @@
         }
 
         header {
-            background-color: 333#;
-            color: black;
-            padding: 20;
-            text-align: center;
+            background-color: #333; /* Dark background color for the header */
+            color: black; /* Text color for the header */
+            padding: 20px; /* Padding around the header content */
+            text-align: center; /* Center align the content within the header */
+        }
+
+        .button-row {
+            display: flex;
+            justify-content: space-around;
+            background-color: #007bff;
+            padding: 10px 0;
+        }
+
+        .button {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #004080;
         }
 
         .center {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             text-align: center;
+            margin-top: 50px;
         }
 
         .coming-soon {
             font-size: 32px;
             color: black;
         }
-
-        .about-button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-size: 16px;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-
-        .about-button:hover {
-            background-color: #0056b3;
-        }
     </style>
 </head>
 <body>
-
     <header>
         <h1>Welcome to Our Website</h1>
+        <div class="button-row">
+            <button class="button" onclick="alert('Blog is currently under construction')">Blog</button>
+            <button class="button" onclick="alert('About page is currently under construction')">About</button>
+            <button class="button" onclick="alert('Guides page is currently under construction')">Guides</button>
+            <button class="button" onclick="alert('Tips and tricks page is currently under construction')">Tips and Tricks</button>
+        </div>
     </header>
-    
+
     <div class="center">
         <p class="coming-soon">Coming soon!</p>
-         <button class="about-button" onclick="showPopup()">About this website</button>
+        <button class="about-button" onclick="showPopup()">About this website</button> <!-- Add the button here -->
     </div>
 
     <script>
