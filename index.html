@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 
+        <div class="navigation-bar">
+            <a href = "https://www.youtube.com/c/MattBlox360"> My YouTube </a>
+        </div>
+
     <head>
         <title> xMattify </title>
         <link rel="icon" type="image/icon" href="/icons/icon.png">
@@ -11,9 +15,6 @@
         <p id="youtube" > If you're interested, you can check out my YouTube channel by visiting the link below: </p>
         <a id="visit-channel" href="https://www.youtube.com"> Check out my channel here! </a>
 
-        <div class="navigation-bar">
-            <a href = "https://www.youtube.com/c/MattBlox360"> My YouTube </a>
-        </div>
     </body>
 
     <style>
@@ -42,17 +43,26 @@
         }
 
         .navigation-bar {
-            background-color: rgb(0,0,0);
+            background-color: rgb(0, 0, 0);
             overflow: hidden;
         }
 
         .navigation-bar youtube {
             float: left;
             padding: 14px 16px;
+            text-align: center;
             text-decoration: none;
             font-size: 20px;
             color: rgb(0, 100, 100);
-            text-align: center;
+        }
+
+        .navigation-bar youtube:hover {
+            background-color: rgb(255, 255, 255);
+            color: black;
+        }
+
+        .navigation-bar youtube.active {
+            color: white;
         }
     </style>
 
