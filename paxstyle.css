@@ -12,10 +12,32 @@ h1 {
 
 p {
   text-align: center;
+  color: rgb(50, 195, 218);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(50, 195, 218);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+li a:hover {
+  color: rgb(62, 137, 137);
+  background-color: rgb(91, 196, 255);
 }
 
 a {
   text-align: center;
+  color: rgb(0, 0, 0);
+  padding: 50px;
 }
 
 body {
