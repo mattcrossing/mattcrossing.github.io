@@ -4,6 +4,7 @@
     background: rgb(20, 77, 111);
     color: rgb(255, 255, 255);
     font-size: 12px
+    border-radius: 5px;
 }
 
 p {
@@ -21,8 +22,9 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(29, 161, 238);
+    background-color: rgb(20, 70, 111);
     border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
 }
 
 li {
