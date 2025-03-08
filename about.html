@@ -7,21 +7,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation Buttons -->
+    <nav class="top-nav">
+        <ul class="nav-buttons">
+            <li><a href="index.html" class="nav-btn home-btn">Home</a></li>
+            <li><a href="about.html" class="nav-btn about-btn">About</a></li>
+            <li><a href="contact.html" class="nav-btn contact-btn">Contact</a></li>
+            <!-- Add more buttons here with custom classes -->
+        </ul>
+    </nav>
+
     <!-- Header -->
     <header>
-        <h1>About Me</h1>
+        <h1 class="main-title">About Me</h1>
         <p class="subtitle">Get to know the person behind the blog</p>
         <div class="header-decor"></div>
     </header>
-
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
     <!-- Main Content -->
     <div class="container">
@@ -38,16 +39,13 @@
             </section>
         </main>
 
-        <!-- Sidebar -->
-        <aside>
-            <h3>Quick Facts</h3>
+        <!-- Right-Side Post Navigation -->
+        <aside class="post-nav">
+            <h3>Recent Posts</h3>
             <ul>
-                <li>Started blogging: March 2025</li>
-                <li>Favorite genre: Sci-fi</li>
-                <li>Hobby: Tech experiments</li>
+                <li><a href="#">First Blog Post</a></li>
+                <li><a href="#">Another Day, Another Post</a></li>
             </ul>
-            <h3>Connect With Me</h3>
-            <p>Have a question or just want to chat? Reach out via the <a href="#contact">Contact</a> page!</p>
         </aside>
     </div>
 
