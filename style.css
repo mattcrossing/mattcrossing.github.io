@@ -9,45 +9,12 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+    background-color: #ffffff; /* White background */
 }
 
-/* Header */
-header {
-    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
-    color: white;
-    text-align: center;
-    padding: 3rem 2rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    position: relative;
-}
-
-.main-title {
-    font-size: 4rem;
-    font-family: 'Georgia', serif;
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-align: center; /* Explicitly centered */
-}
-
-.subtitle {
-    font-size: 1.2rem;
-    font-style: italic;
-    opacity: 0.9;
-    margin-bottom: 1rem;
-}
-
-.header-decor {
-    width: 100px;
-    height: 4px;
-    background-color: #ecf0f1;
-    margin: 0 auto;
-    border-radius: 2px;
-}
-
-/* Navigation Buttons (at the top) */
-nav {
-    background-color: #34495e;
+/* Navigation Buttons (Top) */
+nav.top-nav {
+    background-color: #f0f0f0; /* Light gray for contrast */
     padding: 1rem;
     text-align: center;
 }
@@ -66,40 +33,73 @@ nav {
 .nav-btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    color: white;
+    background-color: #008B8B; /* Dark cyan */
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
+.nav-btn:hover {
+    background-color: #006666; /* Darker cyan on hover */
+}
 
-/* Custom Button Styles */
 .home-btn {
-    background-color: #2980b9; /* Blue for Home */
+    background-color: #008B8B; /* Consistent dark cyan */
 }
 
 .home-btn:hover {
-    background-color: #3498db; /* Lighter blue on hover */
+    background-color: #006666;
 }
 
 .about-btn {
-    background-color: #e74c3c; /* Red for About */
+    background-color: #008B8B;
 }
 
 .about-btn:hover {
-    background-color: #c0392b; /* Darker red on hover */
+    background-color: #006666;
 }
 
 .contact-btn {
-    background-color: #27ae60; /* Green for Contact */
+    background-color: #008B8B;
 }
 
 .contact-btn:hover {
-    background-color: #2ecc71; /* Lighter green on hover */
+    background-color: #006666;
 }
 
-/* Container for Main and Sidebar */
+/* Header */
+header {
+    padding: 2rem;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 4rem;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #000000 0%, #1E90FF 100%); /* Black to Dodger Blue gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.header-decor {
+    width: 80px;
+    height: 3px;
+    background-color: #008B8B; /* Dark cyan */
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/* Main Layout */
 .container {
     display: flex;
     max-width: 1200px;
@@ -110,32 +110,38 @@ nav {
 
 /* Main Content */
 main {
-    flex: 2;
+    flex: 3;
+    padding: 1rem;
 }
 
 .post {
     background-color: #f9f9f9;
     padding: 1.5rem;
-    margin-bottom: 2rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.post:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
 }
 
 .post h2 {
-    color: #2c3e50;
+    color: #008B8B; /* Dark cyan */
     margin-bottom: 0.5rem;
 }
 
 .date {
     font-style: italic;
-    color: #7f8c8d;
+    color: #888;
     margin-bottom: 1rem;
 }
 
 .read-more {
     display: inline-block;
     margin-top: 1rem;
-    color: #2980b9;
+    color: #008B8B;
     text-decoration: none;
     font-weight: bold;
 }
@@ -144,44 +150,55 @@ main {
     text-decoration: underline;
 }
 
-/* Sidebar */
-aside {
-    flex: 1;
-    background-color: #ecf0f1;
-    padding: 1.5rem;
-    border-radius: 5px;
-}
-
-aside h3 {
-    color: #2c3e50;
-    margin-bottom: 1rem;
-}
-
-aside ul {
-    list-style: none;
-}
-
-aside ul li {
+/* About Content (for about.html) */
+.about-content h2 {
+    color: #008B8B;
     margin-bottom: 0.5rem;
 }
 
-aside ul li a {
-    color: #2980b9;
-    text-decoration: none;
+/* Right-Side Post Navigation */
+aside.post-nav {
+    flex: 1;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    position: sticky;
+    top: 1rem;
+    height: fit-content;
 }
 
-aside ul li a:hover {
-    text-decoration: underline;
+aside.post-nav h3 {
+    color: #008B8B;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+aside.post-nav ul {
+    list-style: none;
+}
+
+aside.post-nav ul li {
+    margin-bottom: 0.75rem;
+}
+
+aside.post-nav ul li a {
+    color: #008B8B;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+aside.post-nav ul li a:hover {
+    color: #006666;
 }
 
 /* Footer */
 footer {
-    background-color: #2c3e50;
-    color: white;
+    background-color: #f0f0f0;
+    color: #333;
     text-align: center;
     padding: 1rem;
-    position: fixed;
-    bottom: 0;
+    position: relative; /* Changed from fixed to relative */
     width: 100%;
 }
 
@@ -191,16 +208,12 @@ footer {
         flex-direction: column;
     }
 
-    nav ul {
+    nav.top-nav .nav-buttons {
         flex-direction: column;
-        align-items: center;
+        gap: 0.5rem;
     }
 
-    nav ul li {
-        margin: 0.5rem 0;
-    }
-
-    footer {
+    aside.post-nav {
         position: static;
     }
 }
