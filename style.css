@@ -11,6 +11,7 @@ body {
     color: #333;
 }
 
+/* Header */
 header {
     background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
     color: white;
@@ -21,11 +22,12 @@ header {
 }
 
 .main-title {
-    font-size: 4rem; /* Bigger title */
+    font-size: 4rem;
     font-family: 'Georgia', serif;
     margin-bottom: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 3px;
+    text-align: center; /* Explicitly centered */
 }
 
 .subtitle {
@@ -43,26 +45,27 @@ header {
     border-radius: 2px;
 }
 
+/* Navigation Buttons (at the top) */
 nav {
     background-color: #34495e;
     padding: 1rem;
+    text-align: center;
 }
 
 .nav-buttons {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 1rem; /* Space between buttons */
+    gap: 1rem;
 }
 
 .nav-buttons li {
-    margin: 0; /* Override previous margin */
+    margin: 0;
 }
 
 .nav-btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background-color: #2980b9;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -70,8 +73,30 @@ nav {
     transition: background-color 0.3s ease;
 }
 
-.nav-btn:hover {
-    background-color: #3498db;
+
+/* Custom Button Styles */
+.home-btn {
+    background-color: #2980b9; /* Blue for Home */
+}
+
+.home-btn:hover {
+    background-color: #3498db; /* Lighter blue on hover */
+}
+
+.about-btn {
+    background-color: #e74c3c; /* Red for About */
+}
+
+.about-btn:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+.contact-btn {
+    background-color: #27ae60; /* Green for Contact */
+}
+
+.contact-btn:hover {
+    background-color: #2ecc71; /* Lighter green on hover */
 }
 
 /* Container for Main and Sidebar */
